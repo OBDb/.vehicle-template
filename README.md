@@ -1,2 +1,2 @@
-# .vehicle-template
-Template repo for new vehicles
+# Model make
+
