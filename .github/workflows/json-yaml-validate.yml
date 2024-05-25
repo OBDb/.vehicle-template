@@ -15,7 +15,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: json-yaml-validate
+      - name: v3
         id: json-yaml-validate
         uses: GrantBirki/json-yaml-validate@v2.7.1
         with:
@@ -23,7 +23,7 @@ jobs:
           base_dir: signalsets/v3/
           json_schema: schema/v3.json
 
-      - name: json-yaml-validate
+      - name: v2
         id: json-yaml-validate
         uses: GrantBirki/json-yaml-validate@v2.7.1
         with:
