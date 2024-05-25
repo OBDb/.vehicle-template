@@ -23,7 +23,7 @@ jobs:
           base_dir: signalsets/v3/
           json_schema: schema/v3.json
 
-  json-yaml-validate-legacy:
+  json-yaml-validate-v2:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
