@@ -15,15 +15,20 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: v3
-        id: json-yaml-validate
+      - name: Validate signalsets
+        id: json-yaml-validate-v3
         uses: GrantBirki/json-yaml-validate@v2.7.1
         with:
           comment: "true"
           base_dir: signalsets/v3/
           json_schema: schema/v3.json
 
-      - name: v2
+  json-yaml-validate-v2:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Validate signalsets
         id: json-yaml-validate
         uses: GrantBirki/json-yaml-validate@v2.7.1
         with:
