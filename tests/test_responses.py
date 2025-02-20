@@ -12,20 +12,21 @@ from schemas.python.signals_testing import obd_testrunner
 REPO_ROOT = Path(__file__).parent.parent.absolute()
 
 TEST_CASES = [
-    # # 2019 model year
-    # {
-    #     "model_year": "2019",
-    #     "signalset": "default.json",
-    #     "tests": [
-    #         # Tire pressures
-    #         ("72E05622813028C", {"F150_TP_FL": 32.6}),
-    #         ("72E056228140273", {"F150_TP_FR": 31.35}),
-    #         ("72E056228150291", {"F150_TP_RRO": 32.85}),
-    #         ("72E05622816026E", {"F150_TP_RLO": 31.1}),
-    #         ("72E056228170000", {"F150_TP_RRI": 0.0}),
-    #         ("72E056228180000", {"F150_TP_RLI": 0.0}),
-    #     ]
-    # },
+    # TODO: Implement real tests below with vehicle data.
+    # 2019 model year
+    {
+        "model_year": "2019",
+        "signalset": "default.json",
+        "tests": [
+            # # Tire pressures
+            # ("72E05622813028C", {"F150_TP_FL": 32.6}),
+            # ("72E056228140273", {"F150_TP_FR": 31.35}),
+            # ("72E056228150291", {"F150_TP_RRO": 32.85}),
+            # ("72E05622816026E", {"F150_TP_RLO": 31.1}),
+            # ("72E056228170000", {"F150_TP_RRI": 0.0}),
+            # ("72E056228180000", {"F150_TP_RLI": 0.0}),
+        ]
+    },
 ]
 
 def load_signalset(filename: str) -> str:
